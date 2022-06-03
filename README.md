@@ -2,9 +2,9 @@
 
 ## Description
 
-Currently following
+This project was created while following
 [codewithmosh.com's](https://codewithmosh.com/p/the-ultimate-django-series)
-ultimate Django series.
+Ultimate Django Series.
 
 In part 3, we learn about advanced concepts regarding Django utilities. One of
 the sections is about file handling and we learn how to create an Image Upload
