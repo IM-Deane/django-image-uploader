@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8001'
+]
+
 
 # Application definition
 
@@ -43,6 +47,7 @@ INSTALLED_APPS = [
     'djoser',
     'playground',
     'debug_toolbar',
+    'corsheaders',
     'store',
     'tags',
     'likes',
@@ -50,6 +55,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
